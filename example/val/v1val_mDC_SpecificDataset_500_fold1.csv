@@ -1,0 +1,2 @@
+cell_type,net_type,gene_num,fold,base_path,weight_decay,dropout_rate,edge_dropout_rate,learning_rate,gnn_hidden,gnn_layers,gnn_out,use_gradient_clip,max_grad_norm,max_epochs,patience,pca_ratio,pca_max_components,pca_min_components,topk_ratio,topk_max,topk_min,best_val_auc,best_val_aupr
+mDC,SpecificDataset,500,1,/home/bsb/mywork/data/,0.002,0.45,0.55,0.003,512,3,32,False,1,400,40,0.15,32,8,0.02,6,2,0.779,0.18

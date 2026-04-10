@@ -1,0 +1,9 @@
+lsa==0.73.3
+biomaRt==2.58.2
+dplyr==1.1.4
+data.table==1.17.6
+HGNChelper==0.8.15
+clusterProfiler==4.10.1
+org.Hs.eg.db==3.18.0
+org.Mm.eg.db==3.18.0
+proxy==0.4-27
