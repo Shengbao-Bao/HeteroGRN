@@ -14,6 +14,7 @@ from torch.amp import autocast, GradScaler
 import argparse
 import warnings
 import random
+import copy
 warnings.filterwarnings('ignore')
 
 parser = argparse.ArgumentParser(description="GRN Application: Predict All TF-TG Pairs")
@@ -307,8 +308,10 @@ for epoch in range(1, args.max_epochs + 1):
         best_val_auc = val_auc
         best_val_aupr = val_aupr
         counter = 0
-        best_model_state = model.state_dict()
-        best_predictor_state = predictor.state_dict()
+        best_model_state = copy.deepcopy(model.state_dict())
+        best_predictor_state = copy.deepcopy(predictor.state_dict())
+        #best_model_state = model.state_dict()
+        #best_predictor_state = predictor.state_dict()
     else:
         counter += 1
         if counter >= args.patience:
