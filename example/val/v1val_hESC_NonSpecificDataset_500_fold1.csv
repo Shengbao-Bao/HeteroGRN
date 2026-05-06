@@ -1,2 +1,2 @@
 cell_type,net_type,gene_num,fold,base_path,weight_decay,dropout_rate,edge_dropout_rate,learning_rate,gnn_hidden,gnn_layers,gnn_out,use_gradient_clip,max_grad_norm,max_epochs,patience,pca_ratio,pca_max_components,pca_min_components,topk_ratio,topk_max,topk_min,best_val_auc,best_val_aupr
-hESC,NonSpecificDataset,500,1,/home/bsb/mywork/data/,0.002,0.5,0.45,0.003,256,3,16,False,1,400,30,0.15,32,8,0.02,6,2,0.885,0.133
+hESC,NonSpecificDataset,500,1,/home/bsb/mywork/data/,0.002,0.5,0.45,0.003,256,3,16,False,1,400,30,0.15,32,8,0.02,6,2,0.888,0.145
